@@ -160,16 +160,18 @@ nav ul li a:hover::after{
     border-radius: 10px;
     position: relative;
     height: 300px;
+    overflow: hidden;
 }
 .work img{
     width: 100%;
     height: 100%;
     display: block;
-    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
 }
 .layer{
     width: 100%;
-    height: 100%;
+    height: 0%;
     background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
     border-radius: 10px;
     position: absolute;
@@ -183,6 +185,7 @@ nav ul li a:hover::after{
     padding: 0 40px;
     text-align: center;
     font-size: 1.2rem;
+    transition: height 0.5s ease;
 }
 .layer h3{
     font-weight: 600;
@@ -199,4 +202,25 @@ nav ul li a:hover::after{
     height: 60px;
     border-radius: 50%;
     text-align: center;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+    transition: height 0.5s ease;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #ff004f;
 }
