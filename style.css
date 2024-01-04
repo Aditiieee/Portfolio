@@ -224,3 +224,26 @@ nav ul li a:hover::after{
 .btn:hover{
     background: #ff004f;
 }
+
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 1.2rem;
+}
+.social-icons a{
+    margin-top: 30px;
+    color: #ababab;
+    font-size: 1.2rem;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 10px;
+}
